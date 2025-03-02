@@ -1,10 +1,10 @@
-// File: App.jsx
 import { useState, useRef } from 'react'
-import Header from './components/Header'
-import UploadArea from './components/UploadArea'
-import Result from './components/Result'
-import LoadingSpinner from './components/LoadingSpinner'
-import Footer from './components/Footer'
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Result from "../components/Result"
+import LoadingSpinner from "../components/LoadingSpinner"
+import UploadArea from "../components/UploadArea"
+
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -85,7 +85,7 @@ function App() {
               Brain Tumor Detection
             </h2>
             
-            <UploadArea 
+            <UploadArea
               previewUrl={previewUrl}
               handleImageSelect={handleImageSelect}
               handleUpload={handleUpload}
